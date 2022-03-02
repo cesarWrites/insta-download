@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="static\style.css"  rel="stylesheet" 
+    />
+    <title>Insta-download</title>
+
+</head>
+<!--Create the interface for downloading instagram images and videos-->
+<body>
+    <div class="title"> <h1>Instagram</h1></div>
+    <div class="main">
+        <h2>Download Instagram images and videos</h2>
+        <form method="POST" action="{{url_for('home')}}">
+          <div class="box-1">
+            <input type="url" name="url" required="">
+            <label>Enter the URL to the video or image</label>
+          </div>
+          <div class="box-1">
+            <input type="text" name="type" required="" >
+            <label>Enter the type of file you want to download</label>
+          </div>
+          <br>
+          <br>
+          <br>
+          <button type="submit" value="Submit"> Submit </button>
+        </form>
+      </div>
+    </form>
+</body>
+</html>
